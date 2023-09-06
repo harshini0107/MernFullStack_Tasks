@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+th, td {
+  border: 1px solid black;
+  border-radius: 10px;
+  background: #27bedf;
+}
+</style>
+</head>
+<body>
+
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table>
+<br>
+<br>
+<div class="container">
+    
+    <div class="shape partially-curved-rectangle"></div>
+    <div class="shape partially-curved-rectangle"></div>
+    <div class="shape rounded-corner-rectangle"></div>
+  
+    
+    <div class="shape partially-curved-rectangle"></div>
+    <div class="shape perfect-rectangle"></div>
+    <div class="shape rounded-corner-rectangle"></div>
+  
+    
+    <div class="shape oval"></div>
+    <div class="shape perfect-rectangle"></div>
+    <div class="shape rounded-corners"></div>
+  </div>
+<style>
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 300px; 
+      margin: 0 auto; 
+    }
+  
+    .shape {
+      width: 80px; 
+      height: 80px; 
+      margin: 5px; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+    }
+  
+    .partially-curved-rectangle {
+      border-radius: 5px 5px 5px 5px; 
+      border-style: solid;
+    border-color: rgb(17, 162, 70);
+    }
+  
+    .rounded-corner-rectangle {
+      border-radius: 20px; 
+      border-style: solid;
+      border-color: rgb(17, 162, 70);
+    
+    }
+  
+    .perfect-rectangle {
+      border-style: solid;
+      border-color: rgb(17, 162, 70);
+    
+       
+    }
+  
+    .oval {
+      border-radius: 50%; 
+      height: 50px;
+    width: 80px;
+    border-style: solid;
+    border-color: rgb(17, 162, 70);
+    
+    padding-top: 5px;
+  
+       
+    }
+    
+    .rounded-corners {
+      border-radius: 0 20px 0 20px; 
+      border-style: solid;
+      border-color: rgb(17, 162, 70);
+    
+    }
+  </style>
+</body>
+</html>
+

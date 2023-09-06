@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f1f1f1; 
+}
+
+
+.container {
+  background-color: #ff66b2; 
+  border: 1px solid #e0e0e0; 
+  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+  width: 500px;
+  padding: 50px;
+}
+
+
+.darker-section {
+  background-color: #d94f8b; 
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.input-group label {
+  color: white;
+  font-weight: bold;
+  width: 30%; 
+}
+
+.input-group input[type="text"],
+.input-group input[type="password"],
+.input-group select {
+  width: 70%; 
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+.center-button {
+  text-align: center;
+}
+
+
+button {
+  background-color: #131112; 
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #470521; 
+}
+
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-label {
+  color: white;
+  margin-left: 5px;
+}
+
+textarea {
+  width: 100%;
+  padding: 8px 12px;
+  margin: 6px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+
+select {
+  width: 100%;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="darker-section">
+    <div class="input-group">
+      <label for="name">Name :</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+
+    <div class="input-group">
+      <label for="email">Email :</label>
+      <input type="text" id="email" name="email" required>
+    </div>
+
+    <div class="input-group">
+      <label for="password">Password :</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+
+    <div class="input-group">
+      <label for="phone">Phone number :</label>
+      <input type="text" id="phone" name="phone" required>
+    </div>
+
+    <div class="checkbox-group">
+      <label>Gender :</label>
+      <input type="checkbox" id="male" name="gender" value="male">
+      <label class="checkbox-label" for="male">Male</label>
+      
+      <input type="checkbox" id="female" name="gender" value="female">
+      <label class="checkbox-label" for="female">Female</label>
+    </div>
+
+    <div class="input-group">
+      <label for="language">Language :</label>
+      <select id="language" name="language">
+        <option value="english">English</option>
+        <option value="spanish">Spanish</option>
+        <option value="french">French</option>
+      </select>
+    </div>
+
+    <div class="input-group">
+      <label for="zipcode">Zip code :</label>
+      <input type="text" id="zipcode" name="zipcode">
+    </div>
+
+    <div class="input-group">
+      <label for="about">About :</label>
+      <textarea id="about" name="about"></textarea>
+    </div>
+
+    <div class="center-button">
+      <button type="submit">Register</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
